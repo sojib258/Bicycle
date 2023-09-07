@@ -1,0 +1,241 @@
+// Team Banner Area Start
+.teamBanner{
+    width: 100%;
+    padding: 50px;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../images/team/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__content{
+        width: 100%;
+        height: 60vh;
+        @extend %displayProperty;
+    }&__para{
+        color: $white;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+}
+// Team Banner Area End
+
+// Team Meat Area Start
+.teamMeat{
+    width: 100%;
+    height: 150px;
+    background: $black;
+    clip-path: polygon(0% 0, 100% 0%, 100% 75%, 57% 75%, 57% 94%, 55% 75%, 0 75%);
+    &__content{
+        width: 100%;
+        height: 120px;
+        @extend %displayProperty;
+    }&__head{
+        color: $white;
+    }
+}
+// Team Meat Area End
+
+// Twitter Btn Start
+.twitterBtn{
+    color: $orange-color;
+    font-size: 18px;
+    font-weight: bold;
+    @include transition(.4s);
+    &:hover{
+        color: $deep-orange;
+    }
+}.twitterIcon{
+    background: #2EAAD3;
+    color: $white;
+    padding: 10px;
+    @include borderRadius(50%);
+    margin-right: 10px;
+}
+// Twitter Btn End
+
+// Team Digital Area Start
+.teamDigital{
+    width: 100%;
+    height: auto;
+    background: rgb(255,255,255);
+    background: -moz-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(108,108,108,0.8239670868347339) 85%, rgba(133,133,133,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(108,108,108,0.8239670868347339) 85%, rgba(133,133,133,1) 100%);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(108,108,108,0.8239670868347339) 85%, rgba(133,133,133,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#858585",GradientType=1);
+    &__content{
+        padding: 30px 20px;
+    }&__head{
+        color: $deep-black;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }&__subhead{
+        color: $deep-green;
+        font-size: 18px;
+        text-transform: uppercase;
+    }&__img{
+        -webkit-filter: drop-shadow(0 0 2.25rem $white);
+        filter: drop-shadow(0 0 2.25rem $white);
+    }
+    @media(max-width: 767px){
+        &__content{
+            padding: 50px 5px;
+        }
+    }
+}
+// Team Digital Area End
+
+// Team Creative Area Start
+.teamCreative{
+    width: 100%;
+    height: auto;
+    background: rgb(129,121,121);
+    background: -moz-radial-gradient(circle, rgba(129,121,121,0.8239670868347339) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(129,121,121,0.8239670868347339) 0%, rgba(255,255,255,1) 100%);
+    background: radial-gradient(circle, rgba(129,121,121,0.8239670868347339) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#817979",endColorstr="#ffffff",GradientType=1);
+    &__content{
+        padding: 10px 50px;
+    }&__head{
+        color: $deep-black;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }&__subhead{
+        color: $deep-green;
+        font-size: 18px;
+        text-transform: uppercase;
+    }&__img{
+        -webkit-filter: drop-shadow(0 0 1.5rem $light-black);
+            filter: drop-shadow(0 0 1.5rem $light-black);
+    }
+    @media(max-width: 767px){
+        &__content{
+            padding: 50px 5px;
+        }
+    }
+}
+// Team Creative Area End
+
+// Team Front Area Start
+.teamFront{
+    width: 100%;
+    height: auto;
+    background: rgb(255,255,255);
+    background: -moz-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(108,108,108,0.8239670868347339) 85%, rgba(133,133,133,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(108,108,108,0.8239670868347339) 85%, rgba(133,133,133,1) 100%);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(108,108,108,0.8239670868347339) 85%, rgba(133,133,133,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#858585",GradientType=1);
+    &__content{
+        padding: 10px 50px;
+    }&__head{
+        color: $deep-black;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }&__subhead{
+        color: $deep-green;
+        font-size: 18px;
+        text-transform: uppercase;
+    }&__img{
+            -webkit-filter: drop-shadow(0 0 2.25rem $white);
+            filter: drop-shadow(0 0 2.25rem $white);
+    }
+    @media(max-width: 767px){
+        &__content{
+            padding: 50px 5px;
+        }
+    }
+}
+// Team Front Area End
+
+// Team Back Area Start
+.teamBack{
+    width: 100%;
+    height: auto;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,0.2497373949579832) 0%, rgba(56,56,56,1) 100%);
+    &__content{
+        padding: 10px 50px;
+    }&__head{
+        color: $deep-black;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }&__subhead{
+        color: $deep-green;
+        font-size: 18px;
+        text-transform: uppercase;
+    }&__img{
+            -webkit-filter: drop-shadow(0 0 2.25rem $white);
+            filter: drop-shadow(0 0 2.25rem $white);
+    }
+    @media(max-width: 767px){
+        &__content{
+            padding: 50px 5px;
+        }
+    }
+}
+// Team Back Area End
+
+// Team Ruby Area Start
+.teamRuby{
+    width: 100%;
+    height: auto;
+    background: rgb(255,255,255);
+    background: -moz-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(108,108,108,0.8239670868347339) 85%, rgba(133,133,133,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(108,108,108,0.8239670868347339) 85%, rgba(133,133,133,1) 100%);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(108,108,108,0.8239670868347339) 85%, rgba(133,133,133,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#858585",GradientType=1);
+    &__content{
+        padding: 10px 50px;
+    }&__head{
+        color: $deep-black;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }&__subhead{
+        color: $deep-green;
+        font-size: 18px;
+        text-transform: uppercase;
+    }&__img{
+            -webkit-filter: drop-shadow(0 0 2.25rem $white);
+            filter: drop-shadow(0 0 2.25rem $white);
+    }
+    @media(max-width: 767px){
+        &__content{
+            padding: 50px 5px;
+        }
+    }
+}
+// Team Ruby Area End
+
+// Team PHP Area Start
+.teamPhp{
+    width: 100%;
+    height: auto;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,0.2497373949579832) 0%, rgba(56,56,56,1) 100%);
+    &__content{
+        padding: 10px 50px;
+    }&__head{
+        color: $deep-black;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }&__subhead{
+        color: $deep-green;
+        font-size: 18px;
+        text-transform: uppercase;
+    }&__img{
+            -webkit-filter: drop-shadow(0 0 2.25rem $white);
+            filter: drop-shadow(0 0 2.25rem $white);
+    }
+    @media(max-width: 767px){
+        &__content{
+            padding: 50px 5px;
+        }
+    }
+}
+// Team PHP Area End

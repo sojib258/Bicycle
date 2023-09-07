@@ -1,0 +1,54 @@
+// FAQ Banner Area Start
+.faqBanner{
+    width: 100%;
+    padding: 50px;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../images/faq/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__content{
+        width: 100%;
+        height: 60vh;
+        @extend %displayProperty;
+    }&__para{
+        color: $white;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+}
+// FAQ Banner Area End
+
+// FAQ Answer Area Start 
+.faqAnswer{
+    @extend %whp;
+    &__head{
+        border-bottom: 1px solid $deep-white2;
+        padding-bottom: 35px;
+    }&__shopping{
+        border-bottom: 1px solid $deep-white2;
+        padding: 50px 0px;
+    }&__payment{
+        border-bottom: 1px solid $deep-white2;
+        padding: 50px 0px;
+    }&__para{
+        line-height: 1.8;
+    }
+}
+// FAQ Answer Area End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,307 @@
+// Shop Banner Area Start
+.shopBanner{
+    width: 100%;
+    padding: 50px;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../images/shop/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__content{
+        width: 100%;
+        height: 60vh;
+        @extend %displayProperty;
+    }&__para{
+        color: $white;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+}
+// Shop Banner Area End
+
+// Shop Search Area Start
+.shopSearch{
+    @extend %whp;
+    border-bottom: 1px solid $deep-white;
+    &__content{
+        width: 70%;
+        margin: auto;
+    }&__dropdown{
+        background: $deep-white2;
+        @include borderRadius(4px 0px 0px 4px);
+        .dropdown-toggle{
+            width: 100%;
+            height: auto;
+            padding: 8px 4px;
+        }
+    }&__inp{
+        @include borderRadius(0px);
+        padding: 8px 15px;
+    }&__btn{
+       @extend %displayProperty;
+       padding: 11px 5px;
+       background: $green-color;
+       @include transition(.4s);
+       &:hover{
+           background: $deep-green;
+       }
+    }&__icon{
+        font-size: 16px;
+        color: $white;
+    }
+    @media(max-width: 575px){
+        &__content{
+            padding: 0px 10px;
+            width: 100%;
+            margin: auto;
+        }&__dropdown{
+            .dropdown-toggle{
+                font-size: 12px;
+                padding: 6px 4px;
+            }
+        }&__inp{
+            font-size: 12px;
+        }&__inp::placeholder{
+            font-size: 12px;
+        }&__btn{
+            padding: 10px 5px;
+         }&__icon{
+             font-size: 12px;
+         }
+    }
+}
+// Shop Search Area End
+
+// Shop Product Area Start
+.shopProduct{
+    @extend %whp;
+
+    // Shop Product All Left Items Start it's end on line no 283
+    &__allLeftItems{
+        border-right: 2px solid $deep-white;
+    }
+    &__checkbox{
+        cursor: pointer;
+    }
+    &__lists{
+        font-size: 14px;
+        @include transition(.4s);
+        &:hover{
+            color: $green-color;
+        }
+    }
+    // Average Start
+    &__average{
+        @include display-flex;
+        -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    }&__averageLink{
+        font-size: 14px;
+        color: $black;
+        &:hover{
+            color: $green-color;
+        }
+    }
+    // Average End
+
+    // Brand Start
+    &__brand{
+        @include display-flex;
+        -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    }&__brandLink{
+        font-size: 14px;
+        color: $black;
+        &:hover{
+            color: $green-color;
+        }
+    }
+    // Brand End
+
+    // Price Start
+    &__price{
+        @include display-flex;
+        -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    }&__priceLink{
+        font-size: 14px;
+        color: $black;
+        &:hover{
+            color: $green-color;
+        }
+    }&__priceInput{
+        width: 100px;
+        padding: 0px 5px;
+        border: 1px solid $black!important;
+        @include borderRadius(4px);
+        margin-top: 4px;
+        &:focus{
+            border: 1px solid $black!important;
+            @include borderRadius(4px);
+        }
+    }&__priceBtn{
+        display: inline-block;
+        background: $deep-white;
+        color: $black;
+        padding: 3px 10px;
+        @include borderRadius(4px);
+        font-size: 14px;
+        &:hover{
+            background: $deep-white2;
+            color: $black;
+        }
+    }
+    // Price End
+
+    // Material Start
+    &__material{
+        @include display-flex;
+        -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    }
+    // Material End
+
+    // Bike Size Start
+    &__bikeSize{
+        @include display-flex;
+        -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    }
+    // Bike Size End
+
+    // Bike Weight Start
+    &__weight{
+        @include display-flex;
+        -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    }
+    // Bike Weight End
+
+    // Bike Break Start
+    &__break{
+        @include display-flex;
+        -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    }
+    // Bike Break End
+
+    // Suspension Start
+    &__suspension{
+        @include display-flex;
+        -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    }
+    // Suspension End
+
+    // Gears Start
+    &__gear{
+        @include display-flex;
+        -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    }
+    // Gears End
+
+    // User Start
+    &__user{
+        @include display-flex;
+        -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    }
+    // User End
+
+    // Condition Start
+    &__condition{
+        @include display-flex;
+        -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    }&__conditionLink{
+        font-size: 14px;
+        color: $black;
+        &:hover{
+            color: $green-color;
+        }
+    }
+    // Condition End
+    // Shop Product All Left Items End
+
+    // Shop Product All Right Items Start
+    &__singleItems{
+        border-bottom: 2px solid $deep-white;
+        padding: 25px 10px;
+    }&__img{
+        width: 100%;
+        height: auto;
+    }&__contentHead{
+        font-size: 18px;
+        color: $black;
+        @include transition(.2s);
+        &:hover{
+            color: $green-color;
+        }
+    }&__totalReview{
+        font-size: 14px;
+        color: $black;
+        &:hover{
+            color: $black;
+            text-decoration: underline;
+        }
+    }&__sup{
+        font-size: 16px;
+    }
+
+    // Shop Product All Right Items End
+
+
+
+    @media(max-width: 767px){
+        &__contentHead{
+            font-size: 14px;
+        }
+    }
+    @media(max-width: 575px){
+        &__content{
+            text-align: center;
+        }
+    }
+}
+
+// Shop Product Area End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

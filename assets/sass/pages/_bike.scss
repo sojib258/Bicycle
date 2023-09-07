@@ -1,0 +1,110 @@
+// Bike Banner Area Start
+.bikeBanner{
+    width: 100%;
+    padding: 50px;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../images/team/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__content{
+        width: 100%;
+        height: 60vh;
+        @extend %displayProperty;
+    }&__para{
+        color: $white;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+}
+// Bike Banner Area End
+
+// Bike Cell Area Start 
+.bikeCell{
+	
+    
+    // .hidden { display: none; }
+	@extend %whp;
+	&__head{
+		font-size: 23px;
+	}&__ratings{
+		border-bottom: 1px solid $deep-white;
+		padding: 10px;
+		margin-bottom: 15px;
+	}&__ratingLink{
+		margin-right: 10px;
+		font-size: 14px;
+		color: $light-black;
+		@include transition(.2s);
+		&:hover{
+			color: $green-color;
+			text-decoration: underline;
+		}
+	}&__select{
+		padding: 3px 10px;
+		margin-bottom: 15px;
+	}&__table{
+		padding: 10px 0px;
+		margin-bottom: 15px;
+		border-bottom: 1px solid $deep-white;
+	}table{
+		th{
+			padding-right: 50px;
+			font-size: 14px;
+		}td{
+			font-size: 14px;
+		}
+	}&__aboutList{
+		font-size: 14px;
+		list-style-type: disc;
+		margin-left: 15px;
+		padding-right: 50px;
+	}&__btn{
+		@extend %button;
+        @include transition(.4s);
+		background: $black;
+		margin-top: 20px;
+		box-shadow: 0px 7px 15px 0px $black;
+		
+        border: none;
+        &::before{
+            @extend %buttonBefore;
+            background: $green-color;
+        }&:hover{
+            color: $white;
+            box-shadow: 0px 7px 15px 0px $deep-green;
+        }&:hover::before{
+            @extend %buttonHoverBefore;
+        }
+	}&__picZoomerImg{
+		width: 200px!important;
+		height: auto!important;
+	}
+	@media(max-width: 991px){
+		.piclist{
+			flex-direction: row;
+			width: 100%;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+// Bike Cell Area End
+
+
+
+
+
+
+
+
+

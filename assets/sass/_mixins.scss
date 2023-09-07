@@ -1,0 +1,37 @@
+@mixin display-flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+@mixin justify-con-center{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+@mixin align-i-center{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+@mixin transition($num){
+    -webkit-transition: all $num ease;
+    -o-transition: all $num ease;
+    transition: all $num ease;
+    -moz-transition: all $num ease;
+    -ms-transition: all $num ease;
+}
+
+@mixin borderRadius($val){
+    border-radius: $val;
+    -webkit-border-radius: $val;
+    -moz-border-radius: $val;
+    -ms-border-radius: $val;
+    -o-border-radius: $val;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button:focus,input:focus{
+    outline: none!important;
+    border: none!important;
+}
+::selection{
+    background: $green-color;
+    color: $white;
+}
+body{
+    font-family: $font-roboto;
+    color: $black;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: $font-roboto;
+}
+p{
+    font-family: $font-playfair;
+}
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

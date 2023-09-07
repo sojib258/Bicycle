@@ -1,0 +1,85 @@
+// Contact Banner Area Start
+.contactBanner{
+    width: 100%;
+    padding: 50px;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../images/contact/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__content{
+        width: 100%;
+        height: 60vh;
+        @extend %displayProperty;
+    }&__para{
+        color: $white;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+}
+// Contact Banner Area End
+
+// Contact Touch Area Start
+.contactTouch{
+    @extend %whp;
+    &__input{
+        margin-bottom: 15px;
+    }&__send{
+        display: inline-block;
+        border: 1px solid $green-color;
+        padding: 5px 12px;
+        color: $white;
+        background: $green-color;
+        @include borderRadius(4px);
+        @include transition(.4s);
+        font-size: 16px;
+        margin-bottom: 40px;
+        &:hover{
+            background: transparent;
+            color: $green-color;
+        }
+    }&__infoList{
+        margin-bottom: 15px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid $deep-white;
+    }&__infoIcon{
+        font-size: 16px;
+        margin-right: 5px;
+        color: $orange-color;
+    }&__followList{
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+        @extend %displayProperty;
+        @include borderRadius(50%);
+        @include transition(.4s);
+        background: $orange-color;
+        &:hover{
+            background: $green-color;
+            transform: translateY(-5px);
+            -webkit-transform: translateY(-5px);
+            -moz-transform: translateY(-5px);
+            -ms-transform: translateY(-5px);
+            -o-transform: translateY(-5px);
+}
+    }&__followIcon{
+        font-size: 14px;
+        color: $white;
+    }
+}
+// Contact Touch Area End
+
+// Contact Map Area Start 
+.contactMap{
+    width: 100%;
+    height: 80vh;
+}
+// Contact Map Area End
+
+
+
+
+
+
+

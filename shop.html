@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="text" content="">
+    <meta name="author" content="">
+    <title>Bike eCommerce Website</title>
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- fontawesome icons -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+
+      <!-- Menu Start -->
+      <header class="mainMenu"> 
+        <div class="container"> 
+          <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo/logo.png" class="img-fluid mainMenu__logo" id="logoImage" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars mainMenu__icon"> </i>
+            </button>
+            <div class="d-lg-none"> 
+              <a href="login.html" class="mainMenu__login"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+              <ul class="navbar-nav font-playfair">
+                <li class="nav-item">
+                  <a class="nav-link mainMenu__link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link mainMenu__link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Bikes
+                  </a>
+                  <div class="dropdown-menu mainMenu__dropdownMenu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item mainMenu__dropdownItem" href="bike.html">Mountain</a>
+                    <a class="dropdown-item mainMenu__dropdownItem" href="bike.html">Road</a>
+                    <a class="dropdown-item mainMenu__dropdownItem" href="bike.html">Bmx</a>
+                    <a class="dropdown-item mainMenu__dropdownItem" href="bike.html">Stand</a>
+                    <a class="dropdown-item mainMenu__dropdownItem" href="bike.html">Electric</a>
+                    <a class="dropdown-item mainMenu__dropdownItem" href="bike.html">City</a>
+                    <a class="dropdown-item mainMenu__dropdownItem" href="bike.html">Sports</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mainMenu__link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link mainMenu__link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Pages
+                  </a>
+                  <div class="dropdown-menu mainMenu__dropdownMenu" aria-labelledby="navbarDropdown2">
+                    <a class="dropdown-item mainMenu__dropdownItem" href="about.html">About Us</a>
+                    <a class="dropdown-item mainMenu__dropdownItem" href="service.html">Services</a>
+                    <a class="dropdown-item mainMenu__dropdownItem" href="team.html">Our Team</a>
+                    <a class="dropdown-item mainMenu__dropdownItem" href="blog.html">Blog</a>
+                    <a class="dropdown-item mainMenu__dropdownItem" href="faq.html">FAQ</a>
+                    <a class="dropdown-item mainMenu__dropdownItem" href="404.html">404</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mainMenu__link" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="d-none d-lg-block">
+              <a href="login.html" class="mainMenu__login"><i class="fas fa-user"></i> Login</a>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Menu End -->
+
+      <!-- Main Start -->
+      <main> 
+        <!-- Shop Banner Area Start -->
+        <section class="shopBanner"> 
+            <div class="container"> 
+                <div class="shopBanner__content"> 
+                  <p class="shopBanner__para">Home > Shop</p>
+                </div>
+              </div>
+        </section>
+        <!-- Shop Banner Area End -->
+
+        <!-- Shop Search Box Start -->
+        <div class="shopSearch"> 
+            <div class="container"> 
+                <div class="shopSearch__content"> 
+                    <div class="row p-0"> 
+                        <div class="col-md-2 col-4 p-0">
+                            <div class="shopSearch__dropdown"> 
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle font-size-14" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Bikes
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">All Department</a>
+                                      <a class="dropdown-item" href="#">Accessories</a>
+                                      <a class="dropdown-item" href="#">Deals</a>
+                                      <a class="dropdown-item" href="#">Tools</a>
+                                      <a class="dropdown-item" href="#">Bikes</a>
+                                      <a class="dropdown-item" href="#">Helmet</a>
+                                    </div>
+                                </div>
+                            </div><!-- shopSearch__dropdown End -->
+                        </div>
+                        <div class="col-md-8 col-6 p-0">
+                            <div class="shopSearch__input"> 
+                                <input type="text" class="form-control shopSearch__inp" placeholder="Search Your Bike...">
+                            </div>
+                        </div>
+                        <div class="col-1 p-0">
+                            <div class="shopSearch__button"> 
+                                <a href="#" class="shopSearch__btn"><i class="fas fa-search shopSearch__icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Shop Search Box End -->
+
+        <!-- Shop Product Area Start -->
+        <section class="shopProduct"> 
+            <div class="container-fluid"> 
+                <div class="row"> 
+                  <div class="col-sm-3 d-none d-sm-block"> 
+                    <div class="shopProduct__allLeftItems"> 
+                      <h2 class="shopProduct__averageHead font-size-14 font-bold">Avg. Customer Review</h2>
+                      <div class="shopProduct__average mb-4"> 
+                        <a href="#" class="shopProduct__averageLink"><img src="assets/images/shop/review1.png" class="img-fluid" alt="review-image"> & up</a>
+                        <a href="#" class="shopProduct__averageLink"><img src="assets/images/shop/review2.png" class="img-fluid" alt="review-image"> & up</a>
+                        <a href="#" class="shopProduct__averageLink"><img src="assets/images/shop/review3.png" class="img-fluid" alt="review-image"> & up</a>
+                        <a href="#" class="shopProduct__averageLink"><img src="assets/images/shop/review4.png" class="img-fluid" alt="review-image"> & up</a>
+                      </div><!-- shopProduct Average End -->
+
+                      <h2 class="shopProduct__brandHead font-size-14 font-bold">Brand</h2>
+                      <div class="shopProduct__brand mb-4"> 
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> Roadmaster</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> Eurobike</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> Kent Bicycles</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> Kulana</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> Mongoose</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> Schwinn</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> Pacific</span>
+                      </div><!-- shopProduct Brand End -->
+                      <h2 class="shopProduct__priceHead font-size-14 font-bold">Price</h2>
+                      <div class="shopProduct__price mb-4"> 
+                        <a href="#" class="shopProduct__priceLink">Under $150</a>
+                        <a href="#" class="shopProduct__priceLink">$150 to $300</a>
+                        <a href="#" class="shopProduct__priceLink">$300 to $450</a>
+                        <a href="#" class="shopProduct__priceLink">$450 to $600</a>
+                        <a href="#" class="shopProduct__priceLink">$600 to $1000</a>
+                        <a href="#" class="shopProduct__priceLink">$1000 to $2000</a>
+                        <div class="shopProduct__priceInputs"> 
+                          <input type="number" class="shopProduct__priceInput" placeholder="$ min">
+                          <input type="number" class="shopProduct__priceInput" placeholder="$ max">
+                          <a href="#" class="shopProduct__priceBtn">Go</a>
+                        </div>
+                      </div><!-- shopProduct Price End -->
+
+                      <h2 class="shopProduct__materialHead font-size-14 font-bold">Bike Frame Material Type</h2>
+                      <div class="shopProduct__material mb-4"> 
+                        <span class="font-size-14"><input type="checkbox" class="shopProduct__checkbox"> Aluminium</span>
+                        <span class="font-size-14"><input type="checkbox" class="shopProduct__checkbox"> Steel</span>
+                      </div><!-- Bike Material End -->
+                      
+                      <h2 class="shopProduct__bikeSizeHead font-size-14 font-bold">Adult Bike Wheel Size</h2>
+                      <div class="shopProduct__bikeSize mb-4"> 
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> 20 Inch</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> 24 Inch</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> 26 Inch</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> 28 Inch</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> 30 Inch</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> 650b</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> 700c</span>
+                      </div><!-- Bike Size End -->
+
+                      <h2 class="shopProduct__weightHead font-size-14 font-bold">Weight</h2>
+                      <div class="shopProduct__weight mb-4"> 
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> Under 15 Pounds</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> 15 to 20 Pounds</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> 20 to 25 Pounds</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> 25 to 30 Pounds</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> 30 to 35 Pounds</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> 35 Pounds & Up</span>
+                      </div><!-- Bike Weight End -->
+
+                      <h2 class="shopProduct__breakHead font-size-14 font-bold">Break Type</h2>
+                      <div class="shopProduct__break mb-4"> 
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> Caliper</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> Cantilever</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> Disc</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> Linear Pull</span>
+                      </div><!-- Bike Break End -->
+
+                      <h2 class="shopProduct__suspensionHead font-size-14 font-bold">Suspension Type</h2>
+                      <div class="shopProduct__suspension mb-4"> 
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> Full</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> Full</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> Full</span>
+                      </div><!-- Bike Suspension End -->
+
+                      <h2 class="shopProduct__gearHead font-size-14 font-bold">Number of Gears</h2>
+                      <div class="shopProduct__gear mb-4"> 
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> 1 Speed</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> 2 to 9 Speed</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> 10 to 19 Speed</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> 20 to 24 Speed</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> 25 to 30 Speed</span>
+                      </div><!-- Bike Gear End -->
+
+                      <h2 class="shopProduct__userHead font-size-14 font-bold">User</h2>
+                      <div class="shopProduct__user mb-4"> 
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> Men</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> Women</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> Adults</span>
+                      </div><!-- Bike User End -->
+
+                      <h2 class="shopProduct__conditionHead font-size-14 font-bold">Condition</h2>
+                      <div class="shopProduct__user mb-4"> 
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> New</span>
+                        <span class="shopProduct__lists"><input type="checkbox" class="shopProduct__checkbox"> Used</span>
+                      </div><!-- Bike Condition End -->
+                    </div><!-- shopProduct All Left Item End -->
+                  </div><!-- Col-md-3 End -->
+                  
+                  <div class="col-sm-9"> 
+                    <div class="shopProduct__allRightItems"> 
+                      <div class="shopProduct__singleItems"> 
+                        <div class="row"> 
+                          <div class="col-lg-3 col-md-4 col-sm-5">
+                            <div class="shopProduct__images"> 
+                              <a href="bike.html"><img src="assets/images/shop/1.png" class="img-fluid shopProduct__img" alt="bike-image"></a>
+                            </div>
+                          </div>
+                          <div class="col-lg-9 col-md-8 col-sm-7">
+                            <div class="shopProduct__content"> 
+                              <a href="bike.html"><h2 class="shopProduct__contentHead">Roadmaster High Timber Adult Mountain Bike, Aluminium and Steel Frame Options, 9-26 Speeds Options, 24-29 Inch Wheels, Multiple Colors</h2></a>
+                              <a href="#"><img src="assets/images/shop/review5.png" class="img-fluid" alt="review-image"></a>,
+                              <span><a href="#" class="shopProduct__totalReview">435</a></span>
+                              <a href="#"><p class="font-size-30 deep-black mb-0"><sup class="shopProduct__sup">$</sup>199<sup class="shopProduct__sup">99</sup></p></a>
+                              <p class="font-size-12">Ships in Bangladesh</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- Single Items End -->
+                      <div class="shopProduct__singleItems"> 
+                        <div class="row"> 
+                          <div class="col-lg-3 col-md-4 col-sm-5">
+                            <div class="shopProduct__images"> 
+                              <a href="bike.html"><img src="assets/images/shop/2.png" class="img-fluid shopProduct__img" alt="bike-image"></a>
+                            </div>
+                          </div>
+                          <div class="col-lg-9 col-md-8 col-sm-7">
+                            <div class="shopProduct__content"> 
+                              <a href="bike.html"><h2 class="shopProduct__contentHead">Roadmaster High Timber Adult Mountain Bike, Aluminium and Steel Frame Options, 9-26 Speeds Options, 24-29 Inch Wheels, Multiple Colors</h2></a>
+                              <a href="#"><img src="assets/images/shop/review5.png" class="img-fluid" alt="review-image"></a>,
+                              <span><a href="#" class="shopProduct__totalReview">435</a></span>
+                              <a href="#"><p class="font-size-30 deep-black mb-0"><sup class="shopProduct__sup">$</sup>399<sup class="shopProduct__sup">99</sup></p></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- Single Items End -->
+                      <div class="shopProduct__singleItems"> 
+                        <div class="row"> 
+                          <div class="col-lg-3 col-md-4 col-sm-5">
+                            <div class="shopProduct__images"> 
+                              <a href="bike.html"><img src="assets/images/shop/3.png" class="img-fluid shopProduct__img" alt="bike-image"></a>
+                            </div>
+                          </div>
+                          <div class="col-lg-9 col-md-8 col-sm-7">
+                            <div class="shopProduct__content"> 
+                              <a href="bike.html"><h2 class="shopProduct__contentHead">Roadmaster High Timber Adult Mountain Bike, Aluminium and Steel Frame Options, 9-26 Speeds Options, 24-29 Inch Wheels, Multiple Colors</h2></a>
+                              <a href="#"><img src="assets/images/shop/review5.png" class="img-fluid" alt="review-image"></a>,
+                              <span><a href="#" class="shopProduct__totalReview">435</a></span>
+                              <a href="#"><p class="font-size-30 deep-black mb-0"><sup class="shopProduct__sup">$</sup>189<sup class="shopProduct__sup">99</sup></p></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- Single Items End -->
+                      <div class="shopProduct__singleItems"> 
+                        <div class="row"> 
+                          <div class="col-lg-3 col-md-4 col-sm-5">
+                            <div class="shopProduct__images"> 
+                              <a href="bike.html"><img src="assets/images/shop/4.png" class="img-fluid shopProduct__img" alt="bike-image"></a>
+                            </div>
+                          </div>
+                          <div class="col-lg-9 col-md-8 col-sm-7">
+                            <div class="shopProduct__content"> 
+                              <a href="bike.html"><h2 class="shopProduct__contentHead">Roadmaster High Timber Adult Mountain Bike, Aluminium and Steel Frame Options, 9-26 Speeds Options, 24-29 Inch Wheels, Multiple Colors</h2></a>
+                              <a href="#"><img src="assets/images/shop/review5.png" class="img-fluid" alt="review-image"></a>,
+                              <span><a href="#" class="shopProduct__totalReview">435</a></span>
+                              <a href="#"><p class="font-size-30 deep-black mb-0"><sup class="shopProduct__sup">$</sup>299<sup class="shopProduct__sup">99</sup></p></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- Single Items End -->
+                      <div class="shopProduct__singleItems"> 
+                        <div class="row"> 
+                          <div class="col-lg-3 col-md-4 col-sm-5">
+                            <div class="shopProduct__images"> 
+                              <a href="bike.html"><img src="assets/images/shop/5.png" class="img-fluid shopProduct__img" alt="bike-image"></a>
+                            </div>
+                          </div>
+                          <div class="col-lg-9 col-md-8 col-sm-7">
+                            <div class="shopProduct__content"> 
+                              <a href=""><h2 class="shopProduct__contentHead">Roadmaster High Timber Adult Mountain Bike, Aluminium and Steel Frame Options, 9-26 Speeds Options, 24-29 Inch Wheels, Multiple Colors</h2></a>
+                              <a href="#"><img src="assets/images/shop/review5.png" class="img-fluid" alt="review-image"></a>,
+                              <span><a href="#" class="shopProduct__totalReview">435</a></span>
+                              <a href="#"><p class="font-size-30 deep-black mb-0"><sup class="shopProduct__sup">$</sup>299<sup class="shopProduct__sup">99</sup></p></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- Single Items End -->
+                      <div class="shopProduct__singleItems"> 
+                        <div class="row"> 
+                          <div class="col-lg-3 col-md-4 col-sm-5">
+                            <div class="shopProduct__images"> 
+                              <a href="bike.html"><img src="assets/images/shop/6.png" class="img-fluid shopProduct__img" alt="bike-image"></a>
+                            </div>
+                          </div>
+                          <div class="col-lg-9 col-md-8 col-sm-7">
+                            <div class="shopProduct__content"> 
+                              <a href="bike.html"><h2 class="shopProduct__contentHead">Roadmaster High Timber Adult Mountain Bike, Aluminium and Steel Frame Options, 9-26 Speeds Options, 24-29 Inch Wheels, Multiple Colors</h2></a>
+                              <a href="#"><img src="assets/images/shop/review5.png" class="img-fluid" alt="review-image"></a>,
+                              <span><a href="#" class="shopProduct__totalReview">435</a></span>
+                              <a href="#"><p class="font-size-30 deep-black mb-0"><sup class="shopProduct__sup">$</sup>299<sup class="shopProduct__sup">99</sup></p></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- Single Items End -->
+                      <div class="shopProduct__singleItems"> 
+                        <div class="row"> 
+                          <div class="col-lg-3 col-md-4 col-sm-5">
+                            <div class="shopProduct__images"> 
+                              <a href="bike.html"><img src="assets/images/shop/7.png" class="img-fluid shopProduct__img" alt="bike-image"></a>
+                            </div>
+                          </div>
+                          <div class="col-lg-9 col-md-8 col-sm-7">
+                            <div class="shopProduct__content"> 
+                              <a href="bike.html"><h2 class="shopProduct__contentHead">Roadmaster High Timber Adult Mountain Bike, Aluminium and Steel Frame Options, 9-26 Speeds Options, 24-29 Inch Wheels, Multiple Colors</h2></a>
+                              <a href="#"><img src="assets/images/shop/review5.png" class="img-fluid" alt="review-image"></a>,
+                              <span><a href="#" class="shopProduct__totalReview">435</a></span>
+                              <a href="#"><p class="font-size-30 deep-black mb-0"><sup class="shopProduct__sup">$</sup>299<sup class="shopProduct__sup">99</sup></p></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- Single Items End -->
+                      <div class="shopProduct__singleItems"> 
+                        <div class="row"> 
+                          <div class="col-lg-3 col-md-4 col-sm-5">
+                            <div class="shopProduct__images"> 
+                              <a href="bike.html"><img src="assets/images/shop/8.png" class="img-fluid shopProduct__img" alt="bike-image"></a>
+                            </div>
+                          </div>
+                          <div class="col-lg-9 col-md-8 col-sm-7">
+                            <div class="shopProduct__content"> 
+                              <a href="bike.html"><h2 class="shopProduct__contentHead">Roadmaster High Timber Adult Mountain Bike, Aluminium and Steel Frame Options, 9-26 Speeds Options, 24-29 Inch Wheels, Multiple Colors</h2></a>
+                              <a href="#"><img src="assets/images/shop/review5.png" class="img-fluid" alt="review-image"></a>,
+                              <span><a href="#" class="shopProduct__totalReview">435</a></span>
+                              <a href="#"><p class="font-size-30 deep-black mb-0"><sup class="shopProduct__sup">$</sup>299<sup class="shopProduct__sup">99</sup></p></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- Single Items End -->
+                      <div class="shopProduct__singleItems"> 
+                        <div class="row"> 
+                          <div class="col-lg-3 col-md-4 col-sm-5">
+                            <div class="shopProduct__images"> 
+                              <a href="bike.html"><img src="assets/images/shop/9.png" class="img-fluid shopProduct__img" alt="bike-image"></a>
+                            </div>
+                          </div>
+                          <div class="col-lg-9 col-md-8 col-sm-7">
+                            <div class="shopProduct__content"> 
+                              <a href="bike.html"><h2 class="shopProduct__contentHead">Roadmaster High Timber Adult Mountain Bike, Aluminium and Steel Frame Options, 9-26 Speeds Options, 24-29 Inch Wheels, Multiple Colors</h2></a>
+                              <a href="#"><img src="assets/images/shop/review5.png" class="img-fluid" alt="review-image"></a>,
+                              <span><a href="#" class="shopProduct__totalReview">435</a></span>
+                              <a href="#"><p class="font-size-30 deep-black mb-0"><sup class="shopProduct__sup">$</sup>299<sup class="shopProduct__sup">99</sup></p></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- Single Items End -->
+                      <div class="shopProduct__singleItems"> 
+                        <div class="row"> 
+                          <div class="col-lg-3 col-md-4 col-sm-5">
+                            <div class="shopProduct__images"> 
+                              <a href="bike.html"><img src="assets/images/shop/10.png" class="img-fluid shopProduct__img" alt="bike-image"></a>
+                            </div>
+                          </div>
+                          <div class="col-lg-9 col-md-8 col-sm-7">
+                            <div class="shopProduct__content"> 
+                              <a href="bike.html"><h2 class="shopProduct__contentHead">Roadmaster High Timber Adult Mountain Bike, Aluminium and Steel Frame Options, 9-26 Speeds Options, 24-29 Inch Wheels, Multiple Colors</h2></a>
+                              <a href="#"><img src="assets/images/shop/review5.png" class="img-fluid" alt="review-image"></a>,
+                              <span><a href="#" class="shopProduct__totalReview">435</a></span>
+                              <a href="#"><p class="font-size-30 deep-black mb-0"><sup class="shopProduct__sup">$</sup>299<sup class="shopProduct__sup">99</sup></p></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- Single Items End -->
+                      <div class="shopProduct__singleItems"> 
+                        <div class="row"> 
+                          <div class="col-lg-3 col-md-4 col-sm-5">
+                            <div class="shopProduct__images"> 
+                              <a href="bike.html"><img src="assets/images/shop/11.png" class="img-fluid shopProduct__img" alt="bike-image"></a>
+                            </div>
+                          </div>
+                          <div class="col-lg-9 col-md-8 col-sm-7">
+                            <div class="shopProduct__content"> 
+                              <a href="bike.html"><h2 class="shopProduct__contentHead">Roadmaster High Timber Adult Mountain Bike, Aluminium and Steel Frame Options, 9-26 Speeds Options, 24-29 Inch Wheels, Multiple Colors</h2></a>
+                              <a href="#"><img src="assets/images/shop/review5.png" class="img-fluid" alt="review-image"></a>,
+                              <span><a href="#" class="shopProduct__totalReview">435</a></span>
+                              <a href="#"><p class="font-size-30 deep-black mb-0"><sup class="shopProduct__sup">$</sup>299<sup class="shopProduct__sup">99</sup></p></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- Single Items End -->
+                      <div class="shopProduct__singleItems"> 
+                        <div class="row"> 
+                          <div class="col-lg-3 col-md-4 col-sm-5">
+                            <div class="shopProduct__images"> 
+                              <a href="bike.html"><img src="assets/images/shop/12.png" class="img-fluid shopProduct__img" alt="bike-image"></a>
+                            </div>
+                          </div>
+                          <div class="col-lg-9 col-md-8 col-sm-7">
+                            <div class="shopProduct__content"> 
+                              <a href="bike.html"><h2 class="shopProduct__contentHead">Roadmaster High Timber Adult Mountain Bike, Aluminium and Steel Frame Options, 9-26 Speeds Options, 24-29 Inch Wheels, Multiple Colors</h2></a>
+                              <a href="#"><img src="assets/images/shop/review5.png" class="img-fluid" alt="review-image"></a>,
+                              <span><a href="#" class="shopProduct__totalReview">435</a></span>
+                              <a href="#"><p class="font-size-30 deep-black mb-0"><sup class="shopProduct__sup">$</sup>299<sup class="shopProduct__sup">99</sup></p></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- Single Items End -->
+                      <div class="shopProduct__singleItems"> 
+                        <div class="row"> 
+                          <div class="col-lg-3 col-md-4 col-sm-5">
+                            <div class="shopProduct__images"> 
+                              <a href="bike.html"><img src="assets/images/shop/13.png" class="img-fluid shopProduct__img" alt="bike-image"></a>
+                            </div>
+                          </div>
+                          <div class="col-lg-9 col-md-8 col-sm-7">
+                            <div class="shopProduct__content"> 
+                              <a href="bike.html"><h2 class="shopProduct__contentHead">Roadmaster High Timber Adult Mountain Bike, Aluminium and Steel Frame Options, 9-26 Speeds Options, 24-29 Inch Wheels, Multiple Colors</h2></a>
+                              <a href="#"><img src="assets/images/shop/review5.png" class="img-fluid" alt="review-image"></a>,
+                              <span><a href="#" class="shopProduct__totalReview">435</a></span>
+                              <a href="#"><p class="font-size-30 deep-black mb-0"><sup class="shopProduct__sup">$</sup>299<sup class="shopProduct__sup">99</sup></p></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- Single Items End -->
+                      <div class="shopProduct__singleItems"> 
+                        <div class="row"> 
+                          <div class="col-lg-3 col-md-4 col-sm-5">
+                            <div class="shopProduct__images"> 
+                              <a href="bike.html"><img src="assets/images/shop/14.png" class="img-fluid shopProduct__img" alt="bike-image"></a>
+                            </div>
+                          </div>
+                          <div class="col-lg-9 col-md-8 col-sm-7">
+                            <div class="shopProduct__content"> 
+                              <a href="bike.html"><h2 class="shopProduct__contentHead">Roadmaster High Timber Adult Mountain Bike, Aluminium and Steel Frame Options, 9-26 Speeds Options, 24-29 Inch Wheels, Multiple Colors</h2></a>
+                              <a href="#"><img src="assets/images/shop/review5.png" class="img-fluid" alt="review-image"></a>,
+                              <span><a href="#" class="shopProduct__totalReview">435</a></span>
+                              <a href="#"><p class="font-size-30 deep-black mb-0"><sup class="shopProduct__sup">$</sup>299<sup class="shopProduct__sup">99</sup></p></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- Single Items End -->
+                      <div class="shopProduct__singleItems"> 
+                        <div class="row"> 
+                          <div class="col-lg-3 col-md-4 col-sm-5">
+                            <div class="shopProduct__images"> 
+                              <a href="bike.html"><img src="assets/images/shop/15.png" class="img-fluid shopProduct__img" alt="bike-image"></a>
+                            </div>
+                          </div>
+                          <div class="col-lg-9 col-md-8 col-sm-7">
+                            <div class="shopProduct__content"> 
+                              <a href="bike.html"><h2 class="shopProduct__contentHead">Roadmaster High Timber Adult Mountain Bike, Aluminium and Steel Frame Options, 9-26 Speeds Options, 24-29 Inch Wheels, Multiple Colors</h2></a>
+                              <a href="#"><img src="assets/images/shop/review5.png" class="img-fluid" alt="review-image"></a>,
+                              <span><a href="#" class="shopProduct__totalReview">435</a></span>
+                              <a href="#"><p class="font-size-30 deep-black mb-0"><sup class="shopProduct__sup">$</sup>299<sup class="shopProduct__sup">99</sup></p></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- Single Items End -->
+                      <div class="shopProduct__singleItems"> 
+                        <div class="row"> 
+                          <div class="col-lg-3 col-md-4 col-sm-5">
+                            <div class="shopProduct__images"> 
+                              <a href="bike.html"><img src="assets/images/shop/16.png" class="img-fluid shopProduct__img" alt="bike-image"></a>
+                            </div>
+                          </div>
+                          <div class="col-lg-9 col-md-8 col-sm-7">
+                            <div class="shopProduct__content"> 
+                              <a href="bike.html"><h2 class="shopProduct__contentHead">Roadmaster High Timber Adult Mountain Bike, Aluminium and Steel Frame Options, 9-26 Speeds Options, 24-29 Inch Wheels, Multiple Colors</h2></a>
+                              <a href="#"><img src="assets/images/shop/review5.png" class="img-fluid" alt="review-image"></a>,
+                              <span><a href="#" class="shopProduct__totalReview">435</a></span>
+                              <a href="#"><p class="font-size-30 deep-black mb-0"><sup class="shopProduct__sup">$</sup>299<sup class="shopProduct__sup">99</sup></p></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- Single Items End -->
+                    </div>
+                  </div><!-- Col-md-9 End -->
+                </div>
+            </div>
+        </section>
+        <!-- Shop Product Area End -->
+      </main>
+      <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="footer"> 
+        <div class="container-fluid"> 
+          <div class="row pb-5 pb-md-0"> 
+            <div class="col-lg-2 col-md-4"> 
+              <div class="footer__singleItem"> 
+                <h2>Shop</h2>
+                <ul>
+                  <li><a href="#">Shopping Guide</a></li>
+                  <li><a href="#">Arrivals</a></li>
+                  <li><a href="#">Bicycle Accessories</a></li>
+                  <li><a href="#">Components</a></li>
+                  <li><a href="#">Bicycle</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4"> 
+              <div class="footer__singleItem"> 
+                <h2>Information</h2>
+                <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Product Return</a></li>
+                  <li><a href="#">Address</a></li>
+                  <li><a href="#">Delivery Information</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4"> 
+              <div class="footer__singleItem"> 
+                <h2>About</h2>
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Arrivals</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Sitemap</a></li>
+                  <li><a href="#">Accessories</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6"> 
+              <div class="footer__singleItem">
+                <h2>Follow Us</h2>
+                <ul>
+                  <li><a href="#"><i class="fas fa-phone"></i> +210-030-489</a></li>
+                  <li><a href="#"><i class="fas fa-envelope"></i> example@gmail.com</a></li>
+                  <li><a href="#"><i class="fas fa-map-marker"></i> 1204 Newyork</a></li>
+                  <li><a href="#"><i class="fas fa-fax"></i> +210-030-489</a></li>
+                  <li class="footer__socialIcons"> 
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6"> 
+              <div class="footer__singleItem"> 
+                <h2>Newsletters</h2>
+                <p class="light-green font-size-14">Get the latest updates and offers</p>
+              </div>
+              <div class="form-group footer__form"> 
+                <input type="email" class="footer__form__email" placeholder="Enter your email">
+                <button class="footer__form__subscribe">SUBSCRIBE</button>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottomArea">
+            <div class="row"> 
+              <div class="col-md-3 "> 
+                <div class="footer__logo"> 
+                  <a href="#"><img src="assets/images/logo/logo.png" class="img-fluid" alt="logo"></a>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="footer__market">
+                  <h2>Market</h2>
+                  <ul>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Licenses</a></li>
+                    <li><a href="#">Market API</a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="footer__help">
+                  <h2>Help</h2>
+                  <ul>
+                    <li><a href="#">Help Centers</a></li>
+                    <li><a href="#">Authors</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="footer__card"> 
+                  <a href="#"><img src="assets/images/card.png" class="img-fluid footer__card__img" alt="card image"></a>
+                </div>
+              </div>
+              <div class="col-12"> 
+                <p class="font-size-14 white font-roboto text-center pt-4">&copy; e-Bike Co. Ltd. All Right Reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+      <!-- Footer End -->
+  
+      
+      <script src="assets/js/jquery-3.5.1.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/main.js"></script>
+      
+  </body>
+  </html>

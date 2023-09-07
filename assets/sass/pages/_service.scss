@@ -1,0 +1,50 @@
+// Service Banner Area Start
+.serviceBanner{
+    width: 100%;
+    padding: 50px;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../images/service/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__content{
+        width: 100%;
+        height: 60vh;
+        @extend %displayProperty;
+    }&__para{
+        color: $white;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+}
+// Service Banner Area End
+
+// Service Do Area Start
+.serviceDo{
+    @extend %whp;
+    &__overflow{
+        overflow: hidden;
+    }
+    &__head{
+        @extend %before;
+        &::before{
+            @extend %after;
+            background-color: $green-color;
+            height: 2px;
+        }
+    }&__img{
+        @include borderRadius(4px);
+        @include transition(1.1s);
+        &:hover{
+            transform: scale(1.3)
+        }
+    }&__singleItems{
+        margin-bottom: 30px;
+    }
+}
+
+
+// Service Do Area End
+
+

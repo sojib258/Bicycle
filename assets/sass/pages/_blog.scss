@@ -1,0 +1,203 @@
+// Blog Banner Area Start
+.blogBanner{
+    width: 100%;
+    padding: 50px;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../images/blog/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__content{
+        width: 100%;
+        height: 60vh;
+        @extend %displayProperty;
+    }&__para{
+        color: $white;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+}
+// Blog Banner Area End
+
+// Blog Content Area Start
+.blogContent{
+    @extend %whp;
+    &__img{
+        width: 100%;
+        height: auto;
+        @include borderRadius(4px);
+    }&__date{
+        color: $light-black;
+        font-weight: bold;
+        &:hover{
+            text-decoration: underline;
+            color: $light-black;
+        }
+    }&__tips{
+        color: $light-black;
+        font-weight: bold;
+        &:hover{
+            text-decoration: underline;
+            color: $light-black;
+        }
+    }&__mix{
+        color: $light-black;
+        font-weight: bold;
+        &:hover{
+            text-decoration: underline;
+            color: $light-black;
+        }
+    }&__btn{
+        background: $green-color;
+        padding: 10px 20px;
+        color: $white;
+        @include borderRadius(4px);
+        @include transition(.4s);
+        font-size: 14px;
+        &:hover{
+            color: $white;
+            background: $deep-green;
+        }
+    }&__singleItems{
+        margin-bottom: 50px;
+    }&__form{
+        position: relative;
+    }&__searchInput{
+        width: 100%;
+        height: auto;
+        border: none;
+        background: $light-white;
+        padding: 9px 35px 9px 10px;
+        &::placeholder{
+            font-size: 14px;
+        }
+    }&__searchIcon{
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        color: $deep-white2;
+        cursor: pointer;
+    }
+    // Popular Post Start
+    &__popularHead{
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: relative;
+        padding-bottom: 7px;
+        margin-bottom: 25px;
+        &:before{
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 1px;
+            background: $deep-white2;
+        }
+    }&__popularContent{
+        border: 1px solid $deep-white2;
+        padding: 30px 10px;
+        @include borderRadius(4px);
+    }&__popularSingleContent{
+        @include display-flex;
+        margin-bottom: 15px;
+    }&__popularImg{
+        width: 50px;
+        height: 50px;
+        @include borderRadius(50%);
+        margin-right: 15px;
+    }&__popularSingleHead{
+        font-size: 14px;
+        color: $black;
+        font-weight: bold;
+        letter-spacing: .5px;
+        @include transition(.4s);
+        &:hover{
+            color: $green-color;
+        }
+    }
+    // Recent Post Start
+    &__recentHead{
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: relative;
+        padding-bottom: 7px;
+        margin-bottom: 25px;
+        &:before{
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 1px;
+            background: $deep-white2;
+        }
+    }&__recentContent{
+        border: 1px solid $deep-white2;
+        padding: 30px 10px;
+        @include borderRadius(4px);
+    }&__recentSingleContent{
+        @include display-flex;
+        margin-bottom: 15px;
+    }&__recentImg{
+        width: 50px;
+        height: 50px;
+        @include borderRadius(50%);
+        margin-right: 15px;
+    }&__recentSingleHead{
+        font-size: 14px;
+        color: $black;
+        font-weight: bold;
+        letter-spacing: .5px;
+        @include transition(.4s);
+        &:hover{
+            color: $green-color;
+        }
+    }&__newsHead{
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }&__subs{
+        background: $red-color;
+        padding: 10px 20px;
+        @include borderRadius(4px);
+        @include transition(.4s);
+        color: $white;
+        font-size: 14px;
+        &:hover{
+            background: $deep-red;
+            color: $white;
+        }
+    }&__tags{
+        width: 100%;
+        height: auto;
+        border: 1px solid $deep-white2;
+        padding: 10px;
+        @include borderRadius(4px);
+    }&__tagsHead{
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }&__tagsLink{
+        display: inline-block;
+        border: 1px solid $green-color;
+        padding: 4px 10px;
+        margin: 10px 4px;
+        @include borderRadius(4px);
+        @include transition(.3s);
+        &:hover{
+            background: $green-color;
+            color: $white;
+        }
+    }
+
+    @media(max-width: 575px){
+        &__pageLink{
+            font-size: 12px;
+        }
+    }
+}
+// Blog Content Area End

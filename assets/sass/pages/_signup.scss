@@ -1,0 +1,94 @@
+// Sing Up Banner Start
+.signupBanner{
+    width: 100%;
+    padding: 50px;
+    height: auto;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../images/login/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__form{
+        width: 500px;
+        height: auto;
+        margin: 50px auto;
+        padding: 15px;
+        box-shadow: 0px 0px 15px 0px $white;
+        @include borderRadius(25px);
+    }&__head{
+        font-size: 22px;
+        font-weight: bold;
+        color: $deep-white2;
+        margin-bottom: 2px;
+    }&__para{
+        font-size: 14px;
+        color: $deep-white2;
+    }&__input{
+        margin-bottom: 10px;
+        padding: 7px 20px;
+        width: 100%;
+        height: auto;
+        border: 1px solid $deep-white2;
+        background: transparent;
+        color: $white;
+        @include borderRadius(5px);
+    }&__input:focus{
+        border: 1px solid $green-color!important;
+    }&__input::placeholder{
+        font-size: 16px;
+        color: $deep-white2;
+    }&__input[type="text"]{
+        width: 232px;
+        height: auto;
+        display: inline;
+    }&__terms{
+        color: $light-green;
+        @include transition(.4s);
+        &:hover{
+            color: $green-color;
+        }
+    }&__btn{
+        text-align: center;
+        color: $deep-white2;
+        font-size: 14px;
+        font-weight: bold;
+        background: transparent;
+        display: inline-block;
+        margin: 15px 0px 10px 0px;
+        padding: 4px 35px;
+        border: 2px solid $green-color;
+        @include borderRadius(5px);
+        @include transition(.4s);
+        &:hover{
+            background: $green-color;
+            color: $white;
+        }
+    }&__login{
+        color: $light-green;
+        @include transition(.4s);
+        &:hover{
+            color: $green-color;
+        }
+    }
+}
+@media(max-width: 767px){
+    .signupBanner{
+        padding: 50px 10px;
+        &__form{
+            width: 70%;
+            height: auto;
+        }&__input[type="text"]{
+            width: 100%;
+            height: auto;
+            display: inline-block;
+        }
+    }
+}
+@media(max-width: 575px){
+    .signupBanner{
+        &__form{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+// Sign Up Banner End
